@@ -6,46 +6,74 @@ from api.Agents import (
     RecipeGenerationAndRecommendationAgent,
     CustomRecipeAgent,
     DietaryAdjustmentAgent,
-    AgentProtocol
+    GreetingHandlerAgent,
+    ImageProcessingAgent, 
+    InventoryManagementAgent,
+    MealPlanningAgent, # Added for document processing
+    AgentProtocol,
 )
 
-class RecipeAssistant:
-    def __init__(self):
-        # Initialize agents
-        self.guard_agent = GuardAgent()
-        self.classification_agent = ClassificationAgent()
+import os
+import json
 
-        # Initialize sub-agents for specific tasks
-        self.ingredient_information_agent = IngredientInformationAgent()
-        self.recipe_generation_and_recommendation_agent = RecipeGenerationAndRecommendationAgent()
-        self.custom_recipe_agent = CustomRecipeAgent()
-        self.dietary_adjustment_agent = DietaryAdjustmentAgent()
+def process_user_input(user_input, chat_history, uploaded_file_path=None):
+    # Initialize agents
+    guard_agent = GuardAgent()
+    classification_agent = ClassificationAgent()
+    image_processing_agent = ImageProcessingAgent()
 
-        # Map classification decisions to respective agents
-        self.agent_dict = {
-            "ingredient_information_agent": self.ingredient_information_agent,
-            "recipe_generation_and_recommendation_agent": self.recipe_generation_and_recommendation_agent,
-            "custom_recipe_agent": self.custom_recipe_agent,
-            "dietary_adjustment_agent": self.dietary_adjustment_agent,
+    if uploaded_file_path:
+        try:
+            response = image_processing_agent.get_response(uploaded_file_path)
+            if response["status"] == "success":
+                return {
+                    "content": "Document processed successfully.",
+                    "data": response["data"]
+                }
+            else:
+                return {
+                    "content": response["message"],
+                    "data": None
+                }
+        except Exception as e:
+            return {
+                "content": f"An error occurred during document processing: {e}",
+                "data": None
+            }
+
+    # Handle user text input
+    if user_input:
+        chat_history.append({"role": "user", "content": user_input})
+
+        # Guard agent checks
+        guard_agent_response = guard_agent.get_response(chat_history)
+        if guard_agent_response["memory"]["guard_decision"] == "not allowed":
+            chat_history.append(guard_agent_response)
+            return guard_agent_response["content"]
+
+        # Classification agent determines the appropriate agent
+        classification_agent_response = classification_agent.get_response(chat_history)
+        chosen_agent = classification_agent_response["memory"]["classification_decision"]
+
+        # Map classification decisions to agents
+        agent_dict = {
+            "ingredient_information_agent": IngredientInformationAgent(),
+            "recipe_generation_and_recommendation_agent": RecipeGenerationAndRecommendationAgent(),
+            "custom_recipe_agent": CustomRecipeAgent(),
+            "dietary_adjustment_agent": DietaryAdjustmentAgent(),
+            "greeting_handler_agent": GreetingHandlerAgent(),
+            "inventory_management_agent": InventoryManagementAgent(),
+            "meal_planning_agent": MealPlanningAgent()  # Fixed instantiation
         }
 
-    def process_user_input(self, user_input):
-        # Maintain the conversation history
-        messages = [{"role": "user", "content": user_input}]
-
-        # Pass input through the Guard Agent
-        guard_response = self.guard_agent.get_response(messages)
-        if guard_response["memory"]["guard_decision"] == "not allowed":
-            return guard_response["content"]  # Return the rejection message
-
-        # Classify the input using the Classification Agent
-        classification_response = self.classification_agent.get_response(messages)
-        chosen_agent = classification_response["memory"]["classification_decision"]
-
-        # Retrieve the relevant agent and generate a response
-        agent = self.agent_dict.get(chosen_agent)
+        # Get response from selected agent
+        agent = agent_dict.get(chosen_agent)
         if agent:
-            agent_response = agent.get_response(messages)
-            return agent_response["content"]  # Return the final response
-        else:
-            return "Sorry, no suitable agent could process your request."
+            try:
+                agent_response = agent.get_response(chat_history)
+                chat_history.append(agent_response)
+                return agent_response["content"]
+            except Exception as e:
+                return {"content": f"An error occurred: {e}", "data": None}
+
+    return {"content": "No input provided.", "data": None}

@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|c:\\users\\saunt\\documents\\recipe generator\\recipe_generator\\controllers\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|solutionrelative:controllers\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|c:\\users\\saunt\\documents\\recipe generator\\recipe_generator\\models\\entities\\groceryitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|solutionrelative:models\\entities\\groceryitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|c:\\users\\saunt\\documents\\recipe generator\\recipe_generator\\dto\\requestdto\\additemsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|solutionrelative:dto\\requestdto\\additemsrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|c:\\users\\saunt\\documents\\recipe generator\\recipe_generator\\dto\\requestdto\\addresponserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|solutionrelative:dto\\requestdto\\addresponserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|c:\\users\\saunt\\documents\\recipe generator\\recipe_generator\\dto\\requestdto\\updategroceryitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|solutionrelative:dto\\requestdto\\updategroceryitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Migrations\\20241222084847_firstcommit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241222084847_firstcommit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|c:\\users\\saunt\\documents\\recipe generator\\recipe_generator\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|c:\\users\\saunt\\documents\\recipe generator\\recipe_generator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD0C5A6-E88E-487A-A981-85DC6E8ADCC4}|Recipe_generator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateGroceryItemRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Dto\\RequestDto\\UpdateGroceryItemRequestDto.cs",
+              "RelativeDocumentMoniker": "Dto\\RequestDto\\UpdateGroceryItemRequestDto.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Dto\\RequestDto\\UpdateGroceryItemRequestDto.cs",
+              "RelativeToolTip": "Dto\\RequestDto\\UpdateGroceryItemRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T09:17:55.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:03:00.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GroceryItems.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Models\\Entities\\GroceryItems.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\GroceryItems.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Models\\Entities\\GroceryItems.cs",
+              "RelativeToolTip": "Models\\Entities\\GroceryItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:02:38.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddItemsRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Dto\\RequestDto\\AddItemsRequestDto.cs",
+              "RelativeDocumentMoniker": "Dto\\RequestDto\\AddItemsRequestDto.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Dto\\RequestDto\\AddItemsRequestDto.cs",
+              "RelativeToolTip": "Dto\\RequestDto\\AddItemsRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T20:00:12.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Controllers\\Message.cs",
+              "RelativeDocumentMoniker": "Controllers\\Message.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Controllers\\Message.cs",
+              "RelativeToolTip": "Controllers\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T18:58:30.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddResponseRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Dto\\RequestDto\\AddResponseRequestDto.cs",
+              "RelativeDocumentMoniker": "Dto\\RequestDto\\AddResponseRequestDto.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Dto\\RequestDto\\AddResponseRequestDto.cs",
+              "RelativeToolTip": "Dto\\RequestDto\\AddResponseRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:23:21.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241222084847_firstcommit.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Migrations\\20241222084847_firstcommit.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241222084847_firstcommit.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Migrations\\20241222084847_firstcommit.cs",
+              "RelativeToolTip": "Migrations\\20241222084847_firstcommit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T08:48:47.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\saunt\\Documents\\recipe generator\\Recipe_generator\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T17:59:28.398Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
